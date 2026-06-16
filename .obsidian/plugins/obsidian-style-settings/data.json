@@ -1,0 +1,16 @@
+{
+  "minimal-style@@h1-color@@light": "#FF0000",
+  "minimal-style@@h2-color@@light": "#2E00FF",
+  "minimal-style@@h3-color@@light": "#00FF0A",
+  "minimal-style@@h4-color@@light": "#FFF800",
+  "minimal-style@@h1-color@@dark": "#FFC6C6",
+  "minimal-style@@h2-color@@dark": "#BFE9EC",
+  "minimal-style@@h1-size": "1.5em",
+  "minimal-style@@ax1@@light": "#00A0FF",
+  "minimal-style@@link-color@@light": "#C4A300",
+  "minimal-style@@link-external-color@@light": "#00CAFF",
+  "minimal-style@@ax1@@dark": "#6FC9FF",
+  "minimal-style@@file-header-visibility": "minimal-tab-title-visible",
+  "minimal-style@@h3-color@@dark": "#0BFF00",
+  "minimal-style@@link-color@@dark": "#D96E00"
+}

@@ -1,0 +1,2 @@
+- Konfiguracja karty w tagu.
+- Inicjacja karty w rutynie.

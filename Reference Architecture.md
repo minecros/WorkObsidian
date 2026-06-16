@@ -1,0 +1,4 @@
+Describes the asset configuration and can be unique to each enterprise or its subsets.
+
+A **reference architecture model provides** a **standardized blueprint** for **designing** the **IACS**.  It is derived from the asset model and customized to each specific situation. It **defines asset roles and relationships**, guiding implementation and integration. The reference architecture also **ensures that hardware** and **software meet security** and **operational requirements.** Organizations may use a generalized reference architecture, with detailed models for individual facilities. There is a distinct **advantage to aligning security zones with physical areas or zones** in a facility — for example, aligning a control center with a control security zone. A **zone and conduit model** is then **developed from the reference architecture.**
+![[Pasted image 20260427152323.png]]

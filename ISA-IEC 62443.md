@@ -1,0 +1,3 @@
+- Specifically addresses the security requirements for the IACS within an organization
+- Offers a structured approach to identify, assess, and mitigate risks specific to industrial environments
+- Provides detailed guidelines for securing networks, devices and processes within an IACS, which face unique risks and regulatory requirements. 

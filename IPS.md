@@ -1,0 +1,5 @@
+Intrusion Prevention Systems (IPS) are proactive tools that monitor network traffic in real time to **detect and automatically block threats** before they cause harm.
+IPS are generally not used within IACS zones due to the risk of disrupting critical operations if traffic is incorrectly identified and blocked.
+As cyberattacks grow more advanced, the tools used to defend IACS environments must evolve accordingly — requiring more intelligent, context-aware detection and response capabilities.
+**Behavior-based IPS solutions** are emerging to address this need by analyzing traffic patterns and device behavior over time.
+These systems learn what is “normal” for a specific environment to detect unknown threats, but due to the risk of false positives, caution is advised when deploying them at lower levels of industrial networks.

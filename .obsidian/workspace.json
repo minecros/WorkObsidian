@@ -1,0 +1,245 @@
+{
+  "main": {
+    "id": "e301e117446e3cdf",
+    "type": "split",
+    "children": [
+      {
+        "id": "4f3455961217b30f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bac5d301d9b34d4b",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Nowa karta"
+            }
+          },
+          {
+            "id": "e5bfb94a20caf5be",
+            "type": "leaf",
+            "state": {
+              "type": "learnkit-home",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "learnkit-home"
+            }
+          },
+          {
+            "id": "2f231631d86487ad",
+            "type": "leaf",
+            "state": {
+              "type": "learnkit-reviewer",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "learnkit-reviewer"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "83dbe70f3a230bc2",
+    "type": "split",
+    "children": [
+      {
+        "id": "5df06635fc2efef2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a168e580491a832c",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Ulubione"
+            }
+          },
+          {
+            "id": "89eed83561e8828f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Wyszukiwarka"
+            }
+          },
+          {
+            "id": "790a3838cc43c980",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Przeglądarka plików"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "affe53864fb174b3",
+    "type": "split",
+    "children": [
+      {
+        "id": "ffcf4f7af3be5ba1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cc583ba033d066be",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Fiszki/Fiszki.md",
+                "collapseAll": true,
+                "extraContext": true,
+                "sortOrder": "alphabetical",
+                "showSearch": true,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Linki zwrotne do Fiszki"
+            }
+          },
+          {
+            "id": "39442431a8ce383a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Fiszki/Fiszki.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Łącza wychodzące od Fiszki"
+            }
+          },
+          {
+            "id": "9506b61afbd5c8a2",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Fiszki/Fiszki.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Konspekt Fiszki"
+            }
+          },
+          {
+            "id": "038f8eac2cb883b7",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "alphabetical",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tagi"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "obsidian-git:Open Git source control": false,
+      "github-sync:Sync with Remote": false,
+      "switcher:Otwórz okno szybkiego wyboru": false,
+      "graph:Otwórz podgląd grafu": false,
+      "canvas:Stwórz nową tablicę": false,
+      "daily-notes:Otwórz dzisiejszy dziennik": false,
+      "templates:Wstaw szablon": false,
+      "command-palette:Otwórz listę poleceń": false,
+      "bases:Stwórz nową bazę danych": false,
+      "obsidian-kanban:Create new board": false,
+      "learnkit:LearnKit": false
+    }
+  },
+  "active": "bac5d301d9b34d4b",
+  "lastOpenFiles": [
+    "dr68447.pub",
+    "dr68447",
+    "ISA-IEC 62443 Standard to Secure Your Control Systems.md",
+    "Work/README.md",
+    "Work",
+    "WorkObsidian/desktop.ini",
+    "WorkObsidian",
+    "Reference Model.md",
+    "Fiszki/Fiszki.md",
+    "Done/Aaa.md",
+    "Asset Model.md",
+    "Reference Architecture.md",
+    "Zone Model.md",
+    "ISA-IEC 62443.md",
+    "SR.md",
+    "SPE - Security Program Elements.md",
+    "OSI Model.md",
+    "IDS.md",
+    "IPS.md",
+    "Bez nazwy 2.md",
+    "Bez nazwy 1.md",
+    "UTM.md",
+    "Fiszki",
+    "VPN.md",
+    "ISA TR99.00.01-2007.md",
+    "ISA-TR62443-2-3-2015.md",
+    "ISA-TR62443-2-2-2025.md",
+    "ISO-IEC 27001.md",
+    "ISA/IEC 62443 Groups.md",
+    "PFAT - UPS ABB.md",
+    "COTS.md",
+    "ABB Mod.canvas",
+    "attachments/Pasted image 20260521115905.png",
+    "attachments/Pasted image 20260518170138.png",
+    "attachments/Pasted image 20260518164410.png",
+    "attachments/Pasted image 20260518160747.png",
+    "attachments/Pasted image 20260513105755.png",
+    "attachments/Pasted image 20260505145555.png",
+    "attachments/Pasted image 20260505145008.png",
+    "attachments/Pasted image 20260428133605.png",
+    "attachments/Pasted image 20260428132236.png",
+    "attachments/Pasted image 20260428125357.png",
+    "Using the ISA",
+    "ISA",
+    "Untitled.canvas",
+    "attachments",
+    "Instrukcje",
+    "Done"
+  ]
+}

@@ -1,0 +1,3 @@
+- Focuses on the broader information security management system (ISMS) for protecting sensitive information across all organizational systems
+- Provides a framework for managing general information security risks through policies, controls and procedures
+- Applies to all types of organizations, not limited to specific industries

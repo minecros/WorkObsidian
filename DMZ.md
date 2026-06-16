@@ -1,0 +1,5 @@
+It is recommended that a Demilitarized Zone (DMZ) be used, which acts as a neutral zone or buffer between the enterprise and process control networks.
+A DMZ generally contains systems that must communicate directly with both networks (IT and OT), but in a highly controlled and monitored way. Implementing an intermediate DMZ network is an acceptable approach to enabling communication between an IACS network and a corporate network.
+The DMZ should be connected to the firewall such that specific (restricted) communication may occur between only the corporate network and the DMZ, as well as the IACS network and the DMZ.
+The corporate network and the ICS network should not communicate directly with each other.
+A three-tier design allows secure data transfer between systems, creating multiple layers that an attacker would need to bypass and improving the defense-in-depth posture.
