@@ -11,10 +11,14 @@
             "id": "bac5d301d9b34d4b",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "ABB.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nowa karta"
+              "title": "ABB"
             }
           },
           {
@@ -167,14 +171,23 @@
               "icon": "lucide-tags",
               "title": "Tagi"
             }
+          },
+          {
+            "id": "1db4cde632337f1a",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -193,6 +206,7 @@
   },
   "active": "bac5d301d9b34d4b",
   "lastOpenFiles": [
+    "README.md",
     "dr68447.pub",
     "dr68447",
     "ISA-IEC 62443 Standard to Secure Your Control Systems.md",
@@ -239,7 +253,6 @@
     "ISA",
     "Untitled.canvas",
     "attachments",
-    "Instrukcje",
-    "Done"
+    "Instrukcje"
   ]
 }
