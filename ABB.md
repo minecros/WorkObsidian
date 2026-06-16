@@ -2,7 +2,7 @@
 ## Potrzebne: 
 - Moduł [[CI853]]
 - Podstawka [[TP853]]
-- Terminator [[TB850]] - prawdopodobnie potrzebny tylko na czas testów, na site powinien już być...
+- Terminator [[TB850]] - prawdopodobnie potrzebny tylko na czas testów, na site powinien już być.
 
 Na teście można by było to uruchomić wpinajac się do COM 3 modbusem. Przy nie redundantnym sterowniku port com 3 może zostać wykorzystany do komunikacji modbus. 
 
