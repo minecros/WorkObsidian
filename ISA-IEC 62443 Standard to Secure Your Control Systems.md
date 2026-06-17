@@ -170,6 +170,33 @@ Features:
 - Custom-tailored security architectures.
 Use Case: Defense, nuclear plants, or systems requiring resilience against the most advanced threats.
 # 5. Introduction To The IACS Cybersecurity Lifecycle
+## 1. Asses Phase
+- Gather information where cybersecurity improvement are needed
+- Evaluate existing security controls, identify high-level risks and vulnerabilities, and build a picture of the current risk landscape.
+## 2. Develop & Implement Phase 
+- Ensure the system's cybersecurity measures stay current, responsive and aligned with evolving threats.
+- Continuously monitor and improve
+- Achieved Security Level (SL-A) depends on various factors.
+## 3. Maintain Phase 
+- Protective measures are deployed and integrated into the systems to protect it from threats. 
+- Countermeasures are audited and/or tested and upgraded, if necessary, to reach and maintain Achieved Security Level (SL-A)
+
+## Roles & Responsibilities
+### Asset Owner
+- Responsible for the IACS, its cybersecurity and associated risks throughout its lifecycle.
+- Defines the tolerable residual cybersecurity risk as an input requirement for all activities.
+- May delegate specific responsibilities to other organizations but remain accountable. 
+### Product Supplier
+- Develop and manufactures the components or systems in the IACS and provides documentation and ongoing support for vulnerabilities and updates.
+- Supplies integration and hardening guidelines as well as establishing a process for incident handling and vulnerability management applied to its products.
+### Integration Service Provider 
+- Works to design, Implement and integrate security measures for the automation solution.
+- Different organizations may handle the design and deployment of parts or the entire automation solution, while another may manage validation and commissioning.
+### Maintenance Service Provider
+- Provides scheduled maintenance services, such as updating security patterns, reviewing user accounts, and testing protection schemes for compliance.
+- Responsible for decommissioning parts or the entire automation solution, including risk assessment and purging sensitive data to match the tolerable residual cybersecurity risk. 
+![[Pasted image 20260616143314.png]]
+Cybersecurity is a life cycle not a one-time hardening activity. 
 # 6. Security Program (SP) Requirements For Asset Owners
 ## ISA/IEC 62443 and ISO/IEC 27001
 [[ISA-IEC 62443]] and [[ISO-IEC 27001]]/2 are standards that support structured, risk - based cybersecurity governance, but they apply in different environments (IT versus OT).  
@@ -301,8 +328,80 @@ A **strong firewall is essential for creating a secure boundary** between the 
 ![[Pasted image 20260428125357.png]]
 
 # 9. Industrial Protocols
+## Modbus
+RS232. RS485 Serial
+### Modbus TCP/IP
+TCP/IP, Port 502, easily firewalled
+## OPC
+Open Platform Communication 
+OPC Classic is difficult to secure with firewall because DCOM is free to use any port between 1024 and 65535
+### OPC UA(Unified Architecture)
+- Secure by design
+- Secure Encryption
+- Message Signing
+- Sequenced Packets
+- Authentication
+- User Control
+- Auditing
+## DNP3
+## IEC 61850
+## CIP
+## Profibus
 # 10. Introduction To Patch Management
+## Importance 
+- IACS systems are highly vulnerable to attack due to outdated or unpatched software 
+- With the evolving threat landscape, new vulnerabilities are discovered and published daily 
+- Cybercriminals quickly weaponize newly discovered vulnerabilities to exploit systems 
+- Old malware and other legacy threats remain effective on unpatched systems
+## Challenges
+- Patches are changes that can introduce news risks and alter the system
+	- Changes may impact safety, reliability, certification and performance
+	- Patch deployment must be part of change and configuration management process 
+- Patching is very resource intensive as it requires time, skilled personnel, testing environments and through documentation 
+- Infrequent maintenance outages make it difficult to apply and verify patches without disrupting operations
+## Develop the business case 
+- Clearly outline the reasons for patching including the  operational, financial and cybersecurity benefits 
+## Educate critical decision makers 
+- Ensure the executives, IT/OT managers and other leaders understand why patching is essential for reducing vulnerabilities and maintaining system integrity 
+## Patching is a risk management issue 
+- Patching should be approached as part of the organization’s broader risk management strategy, not just a technical task 
+## Weigh risks vs. benefits 
+- Evaluate whether the security and reliability benefits of patching outweigh potential operational risks, costs and downtime using a structured risk assessment process
+- ![[Pasted image 20260616155312.png]]
 # 11. Introduction To Security Risk Assessment For System Design
+## Foundational Requirements 
+### FR1 - Identification and Authentication Control (IAC)
+- Control access to selected devices, information or both
+- Protect against unauthorized interrogation of the device or information
+### FR2 - Use Control (UC)
+- Control use of selected devices, information or both
+- Protect against unauthorized operation of the device or use of information
+### FR3 - System Integrity (SI)
+- Ensure the integrity of data on selected communication channels
+- Protect against unauthorized changes
+### FR4 - Data Confidentiality (DC)
+- Ensure the confidentiality of data on selected communication channels
+- Protect against eavesdropping
+### FR 5 - Restrict Data Flow (RDF)
+- Restrict the flow od fata on communication channels
+- Protect against the publication of information to unauthorized sources
+### FR 6 - Timely response to Events (TRE)
+- Respond to security violations 
+- Notify the proper authority 
+- Report needed forensic evidence of the violation
+- Automatically taking timely corrective action in mission or safety-critical situations
+### FR7 - Resource Availability (RA)
+- Ensure the availability of all network resources
+- Protect against denial-of-service attacks 
+![[Pasted image 20260616161632.png]]
+## Risk Equation 
+### Risk = Threat x Vulnerability x Consequence
+#### Threat 
+- Any potential source of harm that could exploit a vulnerability
+#### Vulnerability
+- Flaw or weakness in a system's design, implementation, or operation and management that could be exploited to violate the system's integrity or security policy.
+#### Consequence 
+- The impact or outcome that would result if a specific event/incident were to occur.
 # 12. Security Program Requirements For IACS Service Providers
  **This part of the ISA‑ 62443 series defines requirements for security capabilities to be supported by security programs of integration and maintenance.**
 Support for these capabilities means the **service provider can provide them to the asset owner** upon request.
@@ -353,6 +452,54 @@ This table shows the twelve categories or functional areas that have been define
 Per the requirement of ISA/IEC 62443-2-4, the evaluation criteria and what evidence needs to be provided per maturity level (ML 1 to ML 4) are established.
 **The goal is to achieve repeatable and reproducible evaluation results**.
 # 13. Developing Secure Products And Systems
+Primary goal is to provide a product framework addressing:
+- Secure by design
+- Defense-in-depth approach to designing
+- Building 
+- Maintaining
+- Retiring
+## Secondary goal is to align:
+- Development process 
+- Needs of industrial users
+- Security configs & patch management policies and procedures
+- Communications about uncovered product security vulnerabilities
+## Key concept is use of threat modeling:
+- Impact analysis
+- Resolution
+## Key philosophy of secure product life-cycle
+- Defense-in-depth strategy
+## Security management includes:
+- Security Defects
+- Security-related issues
+- Documentation updates
+## How to we know a product supplier is meeting the practice requirements and benchmarks?
+- Benchmarks have been set for complying with requirements
+- Capability Maturity Model Integration for Development (CMMI-DEV) used 
+- Ranging from Level 1 ad hoc processes to Level 5 maturity demonstrating metrics and continuous improvements 
+- Using these benchmarks, it is possible that an organization will discover that it is not ready to implement all requirements to the same level of maturity.
+## Who is the audience for ISA/IEC 62443 Part 4-2?
+### System Integrators
+- Assist in procuring control system components
+- Specify the appropriate security capability level of the individual components required
+- Choose components that provide necessary security capabilities to achieve SL-T for each zone
+### Product suppliers 
+- Understand the requirements placed on control system components for specific security capability level SL-C of those components
+- Provide documentation of how to properly integrate the component into a system to meet a specific SL-T
+## Series of Component Requirements (CR) and Requirement Enhancements (RE) specifically for components
+- Expands the System Requirements (SR) and Requirement Enhancements (RE) defined in ISA-62443-3-3
+- Built upon the same Foundational Requirements (FR) 1-7 and Security Levels (SL) 0-4
+## Common Component Security Constraints (CCSC)
+- Applies to all components
+- Support of essential functions
+- Compensating countermeasures
+- Least privilege
+- Software development process 
+## Specific mapping of Component Requirements (CR) and Requirement Enhancements(RE)
+- CR - Component requirement
+- SAR - Software application requirement 
+- EDR - Embedded device requirement 
+- HDR - Host device requirement 
+- NDR - Network device requirement
 # 14. Security Profiles For ISA 62443
 ## **IEC Technical Specification 62443-1-5**
 This technical specification **outlines a scheme or framework for developing cybersecurity profiles within the ISA/IEC 62443 series.**
@@ -383,35 +530,44 @@ Within the **US Department of Energy**, the Secretary of Energy established a w
 As a result, the **Reference Architecture(RA) for Electric Energy OT** was created, **from which other domain-specific profiles could be derived**: specific profiles for substation (seen below), generation, distributed energy resources, and operation/network control center. It can serve as a template or starting point.
 It helps **individual grid operators use a common profile** and enables a **common protection level** across the sector. **Product suppliers** also know what requirements will be asked for in that sector. It brings the entire sector closer together regarding the use of the ISA/IEC 62443 standards.
 # 15. IACS Security Protection Scheme
+## Overview 
+- Security Program (SP)
+- Security Program Scheme (SPS)
+- Security Program Ratings (SPR)
+- Security Levels (SL)
+## Security program - SP
+Portfolio of security services, including integration and maintenance services, and their associated policies, procedures and products that are applicable to the IACS
+- The SP for IACS asset owners refers to the policies and procedures defined by them to address cybersecurity concerns of the IACS
+- This can include technical process, physical and compensating security measures used to reduce the cybersecurity attack surface
+## Security Protection Scheme (SPS)
+Set of technical, physical and process security measures designed to address cyber security concerns of an IACS during operation
+- An asset owner establishing a Security Program must ensure that an SPS is designed and applied during operation to each IACS, involving all roles defined in the ISA/IEC 62443
+## SPS and the Security Lifecycle 
+- The SPS life cycle mirrors the life cycle of the IACS it is designed to protect with security planning, implementation. monitoring and updates aligned from design to decommissioning 
+- Beyond IACS-specific measures, the Security Program (SP) includes broader organizational controls tied to the enterprise life cycle, such as policies, Key Performance Indicators (KPI), and escalation procedures
+- These corporate requirements must align with the security requirements of each individual IACS to ensure consistency and coverage 
+- Alignment enables risk-based, customized technical, physical, and procedural safeguards based on the criticality of each IACS
+- The asset owner, who also acts as the operator, is responsible for executing these SPS process measures during day-to-day operations and responding to risk as they arise 
+## Security Protection Rating (SPR)
+- SPR evaluates how well the SPS has been implemented and how effectively it meets the system's security requirements in practice 
+	- Compares actual implementation with predefined security expectations based on system needs
+- Based on IEC 62443-3-3 requirements are mapped to Security Levels (SL) to ensure scalable, consistent protection aligned with system risks
+	- Goal is to support IACS during operation to reduce cyber risks to acceptable levels (target risk mitigation)
+- Requirements specify what the operational system must achieve to maintain cybersecurity 
+### Scoring system 
+- A System security requirement is assessed as fulfilled when the security measures provide the capability to fulfil it, and the organizational part of the security measures are practiced reliably (managed and sustained correctly)
+- Describes the outcome of the assessment process which reflects the level of compliance maturity with the system security requirement 
+	- Scores show how thoroughly each requirement is met, from not addressed (score = 0) to fully operational and repeatable (score = 4)
+- The SPR value combines two parts:
+	- Mapping of the considered system security requirement to the security level (SL) based on threat analysis 
+	- Repeatability to execute the organizational measures necessary to sustain the required security measures during regular operations
 
-# Keywords
-- Asset
-- Threat
-- Vulnerability
-- Risk
-- Countermeasure
-- Zone
-- Conduit
-- Security Level (SL)
-	- SL-T (Target)
-	- SL-A (Achieved)
-	- SL-C (Capability)
-- Defense in Depth
-	- Policies
-	- Users
-	- Applications
-	- Systems
-	- Networks
-	- Physical Security
-- Least Privilege
-- Attack Surface
-- Fundamental Requirements
-	- FR1 - Identification and Authentication Control
-	- FR2 - Use Control
-	- FR3 - System Integrity
-	- FR4 - Data Confidentiality
-	- FR5 - Restricted Data Flow
-	- FR6 - Timely Response to Events
-	- FR7 - Resource Availability
+## Security Protection Ratings (SPR) Levels
+- Target
+- Implemented
+- Operated 
 
-#szkolenie1B 
+
+
+
+#szkolenie1B  
